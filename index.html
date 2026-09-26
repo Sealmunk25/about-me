@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Smooth LED color-shifting animation: Purple -> Forest Green -> Pastel Pink */
+        @keyframes ledGlow {
+            0% { background-color: #EAE4F2; } /* Pastel purple */
+            33% { background-color: #4A6D53; } /* Nice forest green */
+            66% { background-color: #F4C2C2; } /* Pastel pink */
+            100% { background-color: #EAE4F2; } /* Back to pastel purple */
+        }
+
+        body {
+            animation: ledGlow 15s infinite ease-in-out; /* Takes 15 seconds to smoothly cycle */
+            font-family: Arial, sans-serif;
+            color: #2c2c2c;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #3B2E4A;
+        }
+
+        /* General styling for images so they look nice and neat */
+        img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Simple styling for the personal photos side-by-side */
+        .photo-row {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        .photo-row img {
+            width: 48%;
+            max-width: none;
+            height: auto;
+        }
+
+        /* Simple styling for the animal photos */
+        .animal-section img {
+            width: 45%;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Who I Am</h2>
+            <p>Hello! My name is Johnette. I am an out of state student from Pennsylvania, and I am married to Sealmore Hobson. I love traveling and lived in Australia for a year before attending college. I am an accounting major aspiring to become a forensic accountant. I am completely new to making websites but so far find it interesting and I hope to learn more soon!</p>
+            
+            <div class="photo-row">
+                <img src="images/me-and-husband.jpg" alt="Sealia and her husband">
+                <img src="images/husband-groundhog.jpg" alt="My husband holding a groundhog">
+            </div>
+        </section>
+
+        <section>
+            <h2>My Interests</h2>
+            <p>When I'm not busy with school, bed rotting, or working, I like to spend time outdoors with the chipmunks on campus. I love hiking, fishing, and wildlife watching. I'm also a huge fan of collecting Pokémon cards my absolute favorites are Bidoof and Bibarel!</p>
+            
+            <!-- Your Pokémon binder photo under interests -->
+            <img src="images/bibarel-binder.jpg" alt="Sealia holding her binder of Bidoof and Bibarel cards">
+        </section>
+
+        <section>
+            <h2>Favorite Animals</h2>
+            <p>I observing wildlife alot, and love almost every animal but my favorites are rodents and seals (not leopard seals)!</p>
+            <p>Here are some of my favorite wildlife photos:</p>
+            
+            <div class="animal-section">
+                <img src="images/seal.jpg" alt="An adorable seal resting on the shore">
+                <img src="images/chipmunk.jpg" alt="A cute chipmunk foraging among leaves and twigs">
+                <img src="images/groundhog.jpg" alt="A groundhog standing outdoors in the snow">
+                <img src="images/chipmunk-flags.jpg" alt="A chipmunk with full cheeks standing between two American flags">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sealchipmunk tail images</p>
+    </footer>
+
+</body>
+</html>
