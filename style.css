@@ -1,40 +1,49 @@
+/* Basic page styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     color: #333333;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
+/* Main content container */
 main {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
-header {
-    background-color: #4a6fa5;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
+/* Color-changing effect for the header */
+@keyframes colorShift {
+    0% { background-color: #b2c9ab; } /* Sage green */
+    50% { background-color: #ffb3ba; } /* Pastel pink */
+    100% { background-color: #dcd0ff; } /* Lavender purple */
 }
 
+header {
+    animation: colorShift 8s infinite alternate;
+    color: #333333;
+    text-align: center;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+/* Section styling */
 section {
     background-color: white;
-    padding: 25px;
+    padding: 20px;
     margin-bottom: 20px;
-    border-radius: 6px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #ddd;
 }
 
-/* Required Flexbox Use #1: Navigation */
+/* Navigation bar using Flexbox */
 nav.site-nav {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    background-color: #334e68;
-    padding: 15px;
+    gap: 20px;
+    background-color: #333333;
+    padding: 12px;
 }
 
 nav.site-nav a {
@@ -47,16 +56,17 @@ nav.site-nav a:hover {
     text-decoration: underline;
 }
 
+/* Headings */
 h1, h2 {
-    color: #243b53;
+    color: #2c3e50;
 }
 
 h2 {
-    border-bottom: 2px solid #e0e0e0;
-    padding-bottom: 8px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
 }
 
-/* Required Flexbox Use #2: Photo Rows & Animals */
+/* Photo rows using Flexbox */
 .photo-row, .animal-section {
     display: flex;
     flex-wrap: wrap;
@@ -65,18 +75,18 @@ h2 {
     margin-top: 15px;
 }
 
-/* Image Styling */
+/* Image sizing and borders */
 img {
     width: 250px;
-    max-width: 100%;
     height: auto;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    border: 1px solid #cccccc;
 }
 
+/* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    color: #627d98;
+    padding: 15px;
+    color: #666666;
     font-size: 0.9rem;
 }
