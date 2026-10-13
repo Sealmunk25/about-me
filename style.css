@@ -1,7 +1,7 @@
 /* Basic page styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f7f7f5;
     color: #333333;
     margin: 0;
     padding: 0;
@@ -14,16 +14,16 @@ main {
     padding: 20px;
 }
 
-/* Color-changing effect for the header */
-@keyframes colorShift {
-    0% { background-color: #b2c9ab; } /* Sage green */
-    50% { background-color: #ffb3ba; } /* Pastel pink */
-    100% { background-color: #dcd0ff; } /* Lavender purple */
+/* Soft, neutral pastel color-shifting header */
+@keyframes mutedColorShift {
+    0% { background-color: #c2d0bc; } /* Muted sage green */
+    50% { background-color: #e8c5cb; } /* Soft dusty pink */
+    100% { background-color: #d6d1e1; } /* Muted lavender */
 }
 
 header {
-    animation: colorShift 8s infinite alternate;
-    color: #333333;
+    animation: mutedColorShift 10s infinite alternate;
+    color: #2f3e46;
     text-align: center;
     padding: 30px;
     border-radius: 4px;
@@ -34,7 +34,7 @@ section {
     background-color: white;
     padding: 20px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #e2e2df;
 }
 
 /* Navigation bar using Flexbox */
@@ -42,7 +42,7 @@ nav.site-nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: #333333;
+    background-color: #354f52;
     padding: 12px;
 }
 
@@ -58,11 +58,11 @@ nav.site-nav a:hover {
 
 /* Headings */
 h1, h2 {
-    color: #2c3e50;
+    color: #2f3e46;
 }
 
 h2 {
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid #e2e2df;
     padding-bottom: 5px;
 }
 
@@ -79,7 +79,7 @@ h2 {
 img {
     width: 250px;
     height: auto;
-    border: 1px solid #ccc;
+    border: 1px solid #dcdcdc;
     border-radius: 4px;
 }
 
@@ -87,6 +87,6 @@ img {
 footer {
     text-align: center;
     padding: 15px;
-    color: #666666;
+    color: #6c757d;
     font-size: 0.9rem;
 }
